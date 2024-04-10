@@ -1,0 +1,22 @@
+.listened-to-it-not-long-ago {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .playlist-blocks {
+    display: flex;
+
+    div {
+      margin-right: 35px;
+      border: 2px solid transparent;
+
+      &:hover {
+        border: 2px solid #66FCF1;
+      }
+
+      p {
+        width: 200px;
+      }
+    }
+  }
+}
