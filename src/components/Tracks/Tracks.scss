@@ -1,4 +1,4 @@
-button {
+.buttonTracks {
     background-color: transparent;
     color: #C5C6C7;
     cursor: pointer;
@@ -6,9 +6,9 @@ button {
     .tile {
         display: flex;
         margin-right: 20px;
-        padding: 5px;
+        padding: 10px;
         margin-bottom: 25px;
-        width: 700px;
+        padding-right: 150px;
         border: 2px solid transparent;
         
         &:hover {
@@ -21,12 +21,20 @@ button {
         span {
             display: flex;
             align-items: center;
-            margin-right: 5px;
+            margin-right: 10px;
         }
 
         .text-tile {
-            margin-top: 10px;
-            text-align: left;      
+            text-align: left;
+            h5{
+                margin-top: 4px;
+                margin-bottom: 1.5px;
+                font-size: 17px;
+            }
+            h6{
+                font-size: 17px;
+                color: #9b9b9b;
+            }
         }
     }
 }

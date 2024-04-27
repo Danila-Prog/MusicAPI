@@ -1,59 +1,24 @@
 import './Tracks.scss'
-const Tracks = () =>{
+import PropTypes from 'prop-types';
+const Tracks = ({id, title, artist}) =>{
     return(
         <div className="Main-tile">
-        <button>
+        <button className='buttonTracks'>
           <div className="tile">
-              <span>1</span>
+              <span>{id}</span>
               <img src="" alt="" />
               <div className="text-tile">
-                <h5>Последняя любовь</h5>
-                <h6>MORGENSHTERN</h6>
-              </div> 
-          </div>
-          </button>
-          <button>
-          <div className="tile">
-              <span>2</span>
-              <img src="" alt="" />
-              <div className="text-tile">
-                <h5>Последняя любовь</h5>
-                <h6>MORGENSHTERN</h6>
-              </div> 
-          </div>
-          </button>
-          <button>
-          <div className="tile">
-              <span>3</span>
-              <img src="" alt="" />
-              <div className="text-tile">
-                <h5>Последняя любовь</h5>
-                <h6>MORGENSHTERN</h6>
-              </div> 
-          </div>
-          </button>
-          <button>
-          <div className="tile">
-              <span>4</span>
-              <img src="" alt="" />
-              <div className="text-tile">
-                <h5>Последняя любовь</h5>
-                <h6>MORGENSHTERN</h6>
-              </div> 
-          </div>
-          </button>
-
-          <button>
-          <div className="tile">
-              <span>5</span>
-              <img src="" alt="" />
-              <div className="text-tile">
-                <h5>Последняя любовь</h5>
-                <h6>MORGENSHTERN</h6>
+                <h5>{title}</h5>
+                <h6>{artist}</h6>
               </div> 
           </div>
           </button>
         </div>
     )
 }
+Tracks.propTypes = {
+  id: PropTypes.node,
+  title: PropTypes.node,
+  artist: PropTypes.node,
+};
 export default Tracks

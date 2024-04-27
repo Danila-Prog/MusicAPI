@@ -7,40 +7,48 @@
     border: none;
 }
 
-main {
-    
+
+.MainLink {
+    border-right: 1px solid #0B0C10;
+    border-bottom: 1px solid #0B0C10;
     h1 {
-        margin-top: 5rem;
+        padding-top: 3rem;
         margin-bottom: 15px;
         font-size: 50px;
     }
 
     ul {
         display: flex;
-        border-bottom: 1px solid #0B0C10;
-        
         li {
             margin-right: 5rem;
             margin-bottom: 5px;
             border-bottom: 2px solid transparent;
-            &:hover{
-                border-bottom: 2px solid  #66FCF1; 
+
+            &:hover {
+                border-bottom: 2px solid #66FCF1;
             }
         }
     }
+}
 
-    button {
+.main {
+    border-right: 1px solid #0B0C10;
+    border-bottom: 1px solid #0B0C10;
+    .buttonMain {
         display: block;
         margin: 0 auto;
-        margin-top: 8rem;
+        padding-top: 8rem;
         margin-bottom: 8rem;
         font-size: 35px;
         background-color: transparent;
         color: #C5C6C7;
         cursor: pointer;
-
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+        }
         i {
-            margin-right: 10px;
+            width: 50px;
         }
     }
 }

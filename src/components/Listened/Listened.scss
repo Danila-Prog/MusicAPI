@@ -1,7 +1,8 @@
 .listened-to-it-not-long-ago {
-  h1 {
-    margin-bottom: 30px;
-  }
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-right: 1px solid #0B0C10;
+  border-bottom: 1px solid #0B0C10;
 
   .playlist-blocks {
     display: flex;

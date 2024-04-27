@@ -5,13 +5,14 @@
 }
 
 .Collection {
+    padding-top: 50px;
+    border-right: 1px solid #0B0C10;
     .main-info{
         height: 800px;
     }
     .main-collection {
         display: flex;
-        padding-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
         img {
             border-radius: 50%;
@@ -34,6 +35,9 @@
     }
 
     nav {
-        margin-bottom: 10%;
+        li{
+            display: inline;
+            margin-right: 50px;
+        }
     }
 }

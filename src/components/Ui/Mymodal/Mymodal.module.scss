@@ -1,0 +1,30 @@
+.myModal{
+    position: absolute;
+    right: 12%;
+    display: none;
+    margin-top: 10px;
+    animation-name: animModal;
+    animation-duration: 1s;
+}
+
+.myModalContent{
+
+    padding: 20px;
+    width: 300px;
+    background-color: #0B0C10;
+    border-radius: 16px;
+
+}
+.myModal.active{
+    display: block;
+    text-align: left;
+}
+
+@keyframes animModal {
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}

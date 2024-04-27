@@ -1,6 +1,9 @@
-import Tracks from '../Tracks/Tracks';
 import './Charts.scss'
+import ChartsTrack from './ChartsTrack';
+import { Link } from 'react-router-dom';
+
 const Charts = () =>{
+  // const [open, setOpen] = useState(false);
     return (
       <section className="Charts">
         <div className="title-before-charts">
@@ -8,10 +11,10 @@ const Charts = () =>{
             <h2>Чарт</h2>
             <p>Треки, которые разрывают все чарты</p>
           </div>
-          <button>Смотреть всё</button>
+          <Link to="/charts">Смотреть всё</Link>
         </div>
 
-        <Tracks/>
+        <ChartsTrack />
       </section>
     );
 }

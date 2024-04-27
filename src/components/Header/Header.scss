@@ -4,7 +4,6 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #0B0C10;
-  width: 1400px;
   button{
     background-color: transparent;
     cursor: pointer;
@@ -47,22 +46,7 @@ header {
         }
       }
 
-      .button-img {
-        display: flex;
-        align-items: baseline;
-        width: 35px;
-        height: 35px;
-        margin-left: 580px;
-        border-radius: 50%;
-        cursor: pointer;
-
-        img {
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-        }
-
-      }
+      
     }
   }
 }

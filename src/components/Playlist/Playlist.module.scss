@@ -1,0 +1,31 @@
+
+.PlaylistOfTheDayAndCharts {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 5rem;
+    padding-top: 30px;
+    .buttonCharts {
+        background-color: #1F2833;
+        color: #C5C6C7;
+        cursor: pointer;
+        div {
+            margin-right: 35px;
+            padding: 10px;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid #66FCF1;
+            }
+            h2{
+                margin-top: 5px;
+                text-align: left;
+            }
+            p {
+                margin-top: 5px;
+                width: 200px;
+                font-size: 15px;
+                text-align: left;
+            }
+        }
+    }
+    
+}

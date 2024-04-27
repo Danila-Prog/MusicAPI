@@ -1,0 +1,37 @@
+
+.myModal{
+    position: fixed;
+    right: 7.7%;
+    display: none;
+    top: 14%;
+    animation-name: animModal;
+    animation-duration: 1s;
+}
+
+.myModalContent{
+    padding: 20px;
+    width: 470px;
+    background-color: #0B0C10;
+    border-radius: 16px;
+
+}
+.myModal.active{
+    display: block;
+    text-align: left;
+}
+.styleModalOfPlaylist{
+    i{
+        position: absolute;
+        right: 3%;
+        cursor: pointer;
+    }
+}
+
+@keyframes animModal {
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
