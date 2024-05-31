@@ -1,7 +1,7 @@
-import './Footer.scss'
+import style from './Footer.module.scss'
 const Footer = () =>{
     return(
-        <footer>
+        <footer className={style.footer}>
             <ul>
               <li>
                 <a href="">Правила рекомендаций (РФ)</a>
@@ -11,9 +11,6 @@ const Footer = () =>{
               </li>
               <li>
                 <a href="">Соц сети</a>
-              </li>
-              <li>
-                <a href="">Ссылка1</a>
               </li>
             </ul>
           </footer>

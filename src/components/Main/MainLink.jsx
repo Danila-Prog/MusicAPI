@@ -6,7 +6,7 @@ const MainLink = () => {
       <h1>Главное</h1>
       <ul>
         <li>
-          <Link to="/allMain">Всё</Link>
+          <Link to="/">Всё</Link>
         </li>
         <li>
           <Link to="/charts">Чарт</Link>

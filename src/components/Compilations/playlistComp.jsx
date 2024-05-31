@@ -1,40 +1,39 @@
 import { useState } from 'react';
-import scss from './playlistComp.module.scss';
-import PropTypes from 'prop-types';
+import style from './playlistComp.module.scss';
 import MymodalPlaylist from '../Ui/Mymodal/ModalPlaylist';
-import ChartsOfNavBar from '../Charts/ChartsOfNavBar';
 import styleModal from '../Ui/Mymodal/ModalPlaylist.module.scss'
+import ChartsTrack from '../Charts/Charts-Track/ChartsTrack';
 
-const PlaylistComp = ({ images, name}) => {
+
+const PlaylistComp = ({ img, name, modalName}) => {
 
   const [modalPlaylist, setModalPlaylist] = useState(false)
 
+  const toggleModal = () => setModalPlaylist(!modalPlaylist)
   return (
     <>
-      <button
-        className={scss.playlistCompStyle}
-        onClick={() => setModalPlaylist(!modalPlaylist)}
-      >
-        <img src={images} alt="" />
+      <button className={style.playlistCompStyle} onClick={toggleModal}>
+        <img src={img} alt="" />
         <h1>{name}</h1>
       </button>
 
       <MymodalPlaylist visible={modalPlaylist} setVisible={setModalPlaylist}>
         <div className={styleModal.styleModalOfPlaylist}>
-          <i
-            className="fa-solid fa-xmark"
-            onClick={() => setModalPlaylist(!modalPlaylist)}
-          ></i>
-          <ChartsOfNavBar />
+          <h6>Плейлист</h6>
+          <h1>{modalName}</h1>
+          <i className="fa-solid fa-xmark" onClick={toggleModal}></i>
+          <div style={{
+            overflowX: 'hidden',
+            height: '600px'
+          }}>
+          <ChartsTrack />
+          </div>
         </div>
       </MymodalPlaylist>
     </>
   );
   
 };
-PlaylistComp.propTypes = {
-    images: PropTypes.node,
-    name: PropTypes.node,
-  };
+
 
 export default PlaylistComp;

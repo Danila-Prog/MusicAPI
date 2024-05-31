@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.collection {
+    padding-top: 50px;
+    border-right: 1px solid #0B0C10;
+    border-bottom: 1px solid #0B0C10;
+    margin-bottom: 30px;
+    .mainInfo{
+        margin-bottom: 15px;
+    }
+    .mainCollection {
+        display: flex;
+        margin-bottom: 50px;
+
+        img {
+            border-radius: 50%;
+        }
+
+        .collectionText {
+            margin-left: 30px;
+
+            h2 {
+                font-size: 65px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 300;
+                color: #7d7d7d;
+            }
+        }
+
+    }
+
+    nav {
+        li{
+            display: inline;
+            margin-right: 50px;
+        }
+    }
+}

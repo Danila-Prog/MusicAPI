@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import cl from './ModalPlaylist.module.scss'
 
 const MymodalPlaylist = ({children, visible, setVisible}) =>{
@@ -15,9 +14,5 @@ const MymodalPlaylist = ({children, visible, setVisible}) =>{
         </div>
     ); 
 }
-MymodalPlaylist.propTypes = {
-    children: PropTypes.node,
-    visible: PropTypes.node,
-    setVisible: PropTypes.node,
-  };
+
 export default MymodalPlaylist

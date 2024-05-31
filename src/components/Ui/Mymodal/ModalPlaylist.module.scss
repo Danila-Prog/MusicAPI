@@ -1,18 +1,16 @@
-
 .myModal{
     position: fixed;
-    right: 7.7%;
     display: none;
-    top: 14%;
+    margin-bottom: 30px;
+    right: 8.3%;
+    top: 10%;
     animation-name: animModal;
     animation-duration: 1s;
 }
 
 .myModalContent{
-    padding: 20px;
+    display: flex;
     width: 470px;
-    background-color: #0B0C10;
-    border-radius: 16px;
 
 }
 .myModal.active{
@@ -22,8 +20,13 @@
 .styleModalOfPlaylist{
     i{
         position: absolute;
-        right: 3%;
+        right: 0%;
+        top: 5%;
         cursor: pointer;
+    }
+    h6{
+        opacity: .6;
+
     }
 }
 

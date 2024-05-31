@@ -1,0 +1,48 @@
+.buttonTracks {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #C5C6C7;
+    cursor: pointer;
+    .tile {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        padding: 10px;
+        margin-bottom: 25px;
+        padding-right: 50px;
+        border: 2px solid transparent;
+        
+        &:hover {
+            border: 2px solid #66FCF1;
+        }
+        img {
+            height: 50px;
+            width: 50px;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        audio{
+            width: 400px;
+        }
+        
+
+        .textTile {
+            text-align: left;
+            width: 300px;
+            margin-left: 12px;
+            h5{
+                margin-top: 4px;
+                margin-bottom: 1.5px;
+                font-size: 17px;
+            }
+            h6{
+                margin-bottom: 15px;
+                font-size: 17px;
+                color: #9b9b9b;
+            }
+        }
+    }
+}

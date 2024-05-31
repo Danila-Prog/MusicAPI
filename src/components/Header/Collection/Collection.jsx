@@ -1,15 +1,15 @@
+import style from './Collection.module.scss'
 import { Link } from "react-router-dom"
-import './Collection.scss'
-import MainCollection from "./mainCollection";
+import MainCollection from "./MainCollection";
 
 const Collection = () =>{
   return (
-    <main className="Collection">
-      <div className="main-info">
+    <main className={style.collection}>
+      <div className={style.mainInfo}>
         <MainCollection/>
         <nav>
           <li>
-            <Link to="/collection/trecks">Треки</Link>
+            <Link to="/collection/tracks">Треки</Link>
           </li>
           <li>
             <Link to="/collection/playlist">Плейлисты</Link>

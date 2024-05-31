@@ -1,24 +1,22 @@
-import './Tracks.scss'
-import PropTypes from 'prop-types';
-const Tracks = ({id, title, artist}) =>{
-    return(
-        <div className="Main-tile">
-        <button className='buttonTracks'>
-          <div className="tile">
-              <span>{id}</span>
-              <img src="" alt="" />
-              <div className="text-tile">
-                <h5>{title}</h5>
-                <h6>{artist}</h6>
-              </div> 
-          </div>
-          </button>
+import { useLogicMain } from "../../hooks/useLogicMain";
+import style from "./Tracks.module.scss";
+
+const Tracks = ({ id, title, artist, audio, img }) => {
+  const { musicRef, handlePlayClick} = useLogicMain();
+
+  return (
+    <div className={style.buttonTracks} onClick={handlePlayClick}>
+      <div className={style.tile}>
+        <span>{id}</span>
+        <img src={img} alt="" />
+        <div className={style.textTile}>
+          <h5>{title}</h5>
+          <h6>{artist}</h6>
         </div>
-    )
-}
-Tracks.propTypes = {
-  id: PropTypes.node,
-  title: PropTypes.node,
-  artist: PropTypes.node,
+        <audio controls ref={musicRef} src={audio}/>
+      </div>
+    </div>
+  );
 };
-export default Tracks
+
+export default Tracks;

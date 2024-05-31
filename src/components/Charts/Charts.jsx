@@ -1,12 +1,11 @@
-import './Charts.scss'
-import ChartsTrack from './ChartsTrack';
+import style from './Charts.module.scss'
+import ChartsTrack from './Charts-Track/ChartsTrack';
 import { Link } from 'react-router-dom';
 
 const Charts = () =>{
-  // const [open, setOpen] = useState(false);
     return (
-      <section className="Charts">
-        <div className="title-before-charts">
+      <section className={style.Charts}>
+        <div className={style.titleBeforeCharts}>
           <div>
             <h2>Чарт</h2>
             <p>Треки, которые разрывают все чарты</p>

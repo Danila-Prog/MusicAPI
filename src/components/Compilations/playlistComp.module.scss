@@ -3,8 +3,13 @@
     background-color: #1F2833;
     margin-bottom: 500px;
     margin-top: 30px;
-    margin-right: 25px;
+    margin-right: 10px;
     cursor: pointer;
+        padding: 5px;
+        border: 2px solid transparent;
+        &:hover {
+            border: 2px solid #66FCF1;
+        }
     img{
         margin-bottom: 10px;
     }
